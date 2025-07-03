@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBlazor", "TestBlazor\TestBlazor.csproj", "{A66491CD-4AD2-4C7B-A2F8-1C23C912A080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosAPI", "TodosAPI\TodosAPI.csproj", "{A413A2D6-B7BB-4833-A2C8-8B389BCD4EA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dto", "Dto\Dto.csproj", "{2633E463-ACA2-48B6-8F20-6855A1C17A2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66491CD-4AD2-4C7B-A2F8-1C23C912A080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66491CD-4AD2-4C7B-A2F8-1C23C912A080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66491CD-4AD2-4C7B-A2F8-1C23C912A080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66491CD-4AD2-4C7B-A2F8-1C23C912A080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A413A2D6-B7BB-4833-A2C8-8B389BCD4EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A413A2D6-B7BB-4833-A2C8-8B389BCD4EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A413A2D6-B7BB-4833-A2C8-8B389BCD4EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A413A2D6-B7BB-4833-A2C8-8B389BCD4EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2633E463-ACA2-48B6-8F20-6855A1C17A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2633E463-ACA2-48B6-8F20-6855A1C17A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2633E463-ACA2-48B6-8F20-6855A1C17A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2633E463-ACA2-48B6-8F20-6855A1C17A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

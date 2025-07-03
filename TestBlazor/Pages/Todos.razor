@@ -1,0 +1,25 @@
+@page "/todos"
+@inject HttpClient Http
+
+<PageTitle>Todos</PageTitle>
+
+@if (_todos != null)
+{
+    <ul class="list-group">
+        @foreach (var todo in _todos)
+        {
+            <li class="list-group-item">
+                @todo.Title
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private TodoDto[]? _todos;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        _todos = await Http.GetFromJsonAsync<TodoDto[]>("api/todos/");
+    }
+}
