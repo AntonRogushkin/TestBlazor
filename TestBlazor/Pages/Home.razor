@@ -1,40 +1,10 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@using TestBlazor.Components
 
-<h1>List of numbers</h1>
+<PageTitle>Todos</PageTitle>
+<TodoList/>
 
-<ul class="list-group">
-    @foreach (var item in _list)
-    {
-        <li class="list-group-item">@item</li>
-    }
-</ul>
-<br>
-<button name="home" class="btn btn-primary" @onclick="@(Update)" disabled="@_isButtonDisabled">@_buttonText</button>
-
-@code
-{
-    private List<int> _list = null!;
-    private string _buttonText = "Click";
-    private bool _isButtonDisabled = false;
-
-    protected override void OnInitialized()
-    {
-        _list = [1, 4, 6, 2];
-    }
-
-    private async Task Update(EventArgs args)
-    {
-        _isButtonDisabled = true;
-        var old = _buttonText;
-        _buttonText = "Wait...";
-        
-        await Task.Delay(TimeSpan.FromSeconds(2));
-
-        _buttonText = old;
-        _isButtonDisabled = false;
-        _list.Add(Random.Shared.Next(100));
-        Console.WriteLine("Hello from Blazor");
-    }
+@code {
+    
 }
